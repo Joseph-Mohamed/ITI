@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Youssef and this is my portifolio">
+
+    <title>My Portfolio Page Project</title>
+    <!-- ! Link for css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ! Link for Icon-->
+    <link rel="icon" type="image/x-icon" href="./assets/Images/man.png">
+</head>
+
+<body>
+    <!--! Header & Navigation -->
+    <header>
+        <h1>Youssef Mohamed Mahmoud</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills & Journey</a>
+            <a href="#courses">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- ! About Section -->
+        <section id="about">
+            <h1>Welcome to My portifolio</h1>
+            <p>I am<strong> Youssef Mohamed</strong>, a student deeply passionate about <em>Web Development</em> and
+                Intelligent Systems programming. <mark>I always strive to improve my skills</mark> to build useful
+                digital projects.</p>
+            <img src="./assets/Images/man.png" alt="man">
+        </section>
+
+        <!-- ! Skills Section -->
+        <section id="skills">
+            <h2>Skills & Learning journy</h2>
+            <!--! Unordered List for Skills -->
+            <h3>Technical Skills:</h3>
+            <ul>
+                <li>HTML5 &amp; Semantic Web</li>
+                <li>C# &amp; .Net Core</li>
+                <li>Python &amp; ML</li>
+            </ul>
+            <!--! Ordered List for Learning Track -->
+            <h3>learning Jounry steps:</h3>
+            <ol>
+                <li>Computer Science Fundamentals</li>
+                <li>Learning HTML and CSS</li>
+                <li>Deep Dive into Object-Oriented Programming and Backend</li>
+            </ol>
+        </section>
+
+
+        <!--! Courses Table Section -->
+        <section id="Courses">
+            <h2>My Traning Courses</h2>
+            <table border="1">
+                <caption>
+                    <h3><strong>Table Showing Details of the course i have completed</strong></h3>
+                </caption>
+
+                <thead>
+                    <tr align="center">
+                        <th width="200px">Course Name</th>
+                        <th width="200px">Durstion</th>
+                        <th width="200px">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>Web Essentials &amp; HTML</td>
+                        <td>2 Weeks</td>
+                        <td>Completes</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr align="center">
+                        <td colspan="2">Total Complete Course</td>
+                        <td>2 Courses</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+
+        <!--! Mini Gallery Section -->
+
+        <section id="gallery">
+            <h2>Mini gallery</h2>
+            <figure>
+                <img width="250px" src="./assets/Images/task.png" alt="task Manegemnt system">
+                <figcaption>Task Mangement System project</figcaption>
+            </figure>
+            <figure>
+                <img width="250px" src="./assets/Images/heart.png" alt="Heart Failure Prediction ">
+                <figcaption>Heart Failure Prediction project</figcaption>
+            </figure>
+            <figure>
+                <img width="250px" src="./assets/Images/ceteficate.png" alt="ceteficate">
+                <figcaption>Training Completion Certificate</figcaption>
+            </figure>
+        </section>
+        <!--! FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What fields did you specialize in?</summary>
+                <p>I study Computer Science with a strong focus on web development and artificial intelligence
+                    technologies.</p>
+            </details>
+
+            <details>
+                <summary>How can I contact you for freelance work?</summary>
+                <p>You can use the contact form at the bottom of the page or email me directly.</p>
+            </details>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+201000000000">
+                </div>
+                <br>
+                <div>
+                    <label for="birthdate">Date of Birth:</label><br>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <br>
+                <div>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="project">Job / Project Offer</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Preferred Contact Method:</label><br>
+                    <input type="radio" id="pref_email" name="preferred_contact" value="Email" checked>
+                    <label for="pref_email">Email</label>
+
+                    <input type="radio" id="pref_phone" name="preferred_contact" value="Phone">
+                    <label for="pref_phone">Phone</label>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="30"
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <br>
+    
+    <!--! Footer -->
+    <footer>
+        <address>
+            Contact: Email: <a href="youssef.mo.mohmoud89@gmail.com">youssef.mo.mohmoud89@gmail.com</a> &nbsp;|&nbsp;
+            Location: Cairo,
+            Egypt
+        </address>
+        <p>
+            <a href="https://github.com/Joseph-Mohamed" target="_blank">My GitHub Profile</a>
+        </p>
+        <p>&copy; 2026 Youssef Mohamed. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
