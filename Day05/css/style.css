@@ -1,0 +1,25 @@
+body::selection {
+    background-color: rgb(6, 149, 178);
+    color: #FFF;
+}
+
+label:hover,input:focus,
+textarea,a,
+.main-title {
+    color: #c62828;
+}
+
+#title {
+    color: rgb(13, 195, 231);
+}
+
+.bg-dark {
+    background-color: #fff8f0;
+    color: #333;
+}
+
+.btn-danger:hover
+{
+    color: #FFF;
+    background-color: #c62828;
+}
