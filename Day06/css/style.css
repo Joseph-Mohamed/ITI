@@ -54,6 +54,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background: url("../assets/Images/Profile-bg.png") center cover no-repeat fixed ;
 }
 
 .home-links a {
