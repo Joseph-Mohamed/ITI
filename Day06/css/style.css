@@ -1,0 +1,141 @@
+/** General Prop  */
+:root {
+    --main-color: #FACC15;
+    --secondry-color: yellow;
+    --selection-color: #3b82f6;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+/* * Main prop */
+
+body {
+    --main-bg: #FFF;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    text-align: center;
+}
+
+body::selection {
+    background-color: var(--selection-color);
+    color: var(--secondry-color);
+}
+
+section {
+    --bg-dark: gray;
+    background-color: var(--bg-dark);
+}
+
+/* * override & cursur */
+/* علشان انا عاوز دي الي تطبق */
+.btn {
+    cursor: cell !important;
+}
+
+button[type="sumbit"],
+button[type="reset"] {
+    cursor: grab;
+}
+
+button {
+    cursor: help;
+}
+
+/* ^ Home Section Start */
+
+#home {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../assets/Images/Profile-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-links a {
+    --size: 1.25rem;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: var(--size)
+}
+
+.home-links a:hover,
+button:hover {
+    color: var(--secondry-color);
+}
+
+.home-links {
+    --transparent: rgba(0, 0, 0, 0);
+    color: var(--transparent);
+    text-align: right;
+    width: 21.875rem;
+}
+
+.home-content,
+footer,
+header>div {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+/* ^ Home Section End */
+
+/* ^ About Section Start */
+figure img {
+    width: 250px;
+}
+
+.about-gallery {
+    width: 100em;
+}
+
+#about {
+    width: 100vw;
+}
+
+/* ^ Skills Section Start */
+.skills-contanier {
+    text-align: center;
+}
+
+#skills ul,
+ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.about-description {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 31.25rem;
+}
+
+#about p {
+    text-align: center;
+    min-width: 100px;
+    max-width: 37.5rem
+}
+
+/* ^ Skills Section End */
+
+
+.footer-info {
+    text-align: center;
+    min-width: 100px;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.note {
+    background: red;
+    width: 80vw;
+    height: 100px;
+    overflow: hidden;
+}

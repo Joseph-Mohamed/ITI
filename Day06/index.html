@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- ! Link for css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--^ Home Section Start  -->
+    <section id="home">
+        <header>
+            <nav>
+                <table>
+                    <ul>
+                        <tr>
+                            <td>
+                                <li class="home-links"><a href="#home">Home</a></li>
+                            </td>
+                            <td>
+                                <li class="home-links"><a href="#about">About</a></li>
+                            </td>
+                            <td>
+                                <li class="home-links"><a href="#skills">Skills</a></li>
+                            </td>
+                            <td>
+                                <li class="home-links"><a href="#contact">Contact Us</a></li>
+                            </td>
+                        </tr>
+                    </ul>
+                </table>
+            </nav>
+            <div><img src="./assets/Images/joe.jpg" alt="Youssef Image"></div>
+        </header>
+        <div class="home-content">
+
+            <h1>Youssef Mohamed Mahmoud Hassan</h1>
+            <h2>Front-End Developer</h2>
+        </div>
+        <br>
+    </section>
+    <br>
+
+    <!--^ Home Section End  -->
+
+    <!--^ Main Section Start  -->
+    <main>
+        <!-- ^ About Section Start-->
+        <section id="about">
+            <br>
+
+            <h2>About Me</h2>
+            <p class="about-description">I am<strong> Youssef Mohamed</strong>, a student deeply passionate about
+                <em>Web Development</em> and
+                Intelligent Systems programming. <mark>I always strive to improve my skills</mark> to build useful
+                digital projects.
+            </p>
+
+            <h3>Mini gallery</h3>
+
+
+            <table class="about-gallery">
+                <tbody>
+                    <tr class="about-gallery">
+                        <td>
+
+                            <figure>
+                                <img src="./assets/Images/task.png" alt="task Manegemnt system">
+                                <figcaption>Task Mangement System project</figcaption>
+                            </figure>
+                        </td>
+
+                        <td>
+
+                            <figure>
+                                <img src="./assets/Images/heart.png" alt="Heart Failure Prediction ">
+                                <figcaption>Heart Failure Prediction project</figcaption>
+                            </figure>
+                        </td>
+
+                        <td>
+
+                            <figure>
+                                <img src="./assets/Images/ceteficate.png" alt="ceteficate">
+                                <figcaption>Training Completion Certificate</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+
+        </section>
+        <br>
+        <!-- ^ About Section End-->
+
+        <!-- ^ Skills Section Sart -->
+        <section id="skills">
+            <br>
+            <br>
+            <h2>Skills & Learning journy</h2>
+            <!--! Unordered List for Skills -->
+            <h3>Technical Skills:</h3>
+            <div class="skills-contanier">
+                <ul>
+                    <li>HTML5 &amp; Semantic Web</li>
+                    <li>C# &amp; .Net Core</li>
+                    <li>Python &amp; ML</li>
+                </ul>
+            </div>
+            <!--! Ordered List for Learning Track -->
+            <h3>learning Jounry steps:</h3>
+            <div class="skills-contanier">
+                <ol>
+                    <li>Computer Science Fundamentals</li>
+                    <li>Learning HTML and CSS</li>
+                    <li>Deep Dive into Object-Oriented Programming and Backend</li>
+                </ol>
+            </div>
+            <br>
+
+        </section>
+        <!-- ^ Skills Section End -->
+        <br>
+        <!--^ Contact Section Start -->
+        <section id="contact">
+            <br>
+            <br>
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Send Me Know ☺️</legend>
+                    <table align="center">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label for="name">Name:</label><br>
+                                        <input type="text" id="name" name="name" required
+                                            placeholder="Enter your full name">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div>
+                                        <label for="email">Email Address:</label><br>
+                                        <input type="email" id="email" name="email" required
+                                            placeholder="example@domain.com">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    <div>
+                                        <label for="phone">Phone Number:</label><br>
+                                        <input type="tel" id="phone" name="phone" placeholder="+201000000000">
+                                    </div>
+                                </td>
+                                <td>
+
+                                    <div>
+                                        <label for="birthdate">Date of Birth:</label><br>
+                                        <input type="date" id="birthdate" name="birthdate">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <label for="subject">Subject:</label><br>
+                                        <select id="subject" name="subject">
+                                            <option value="inquiry">General Inquiry</option>
+                                            <option value="project">Job / Project Offer</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <label>Preferred Contact Method:</label><br>
+                                        <input type="radio" id="pref_email" name="preferred_contact" value="Email"
+                                            checked>
+                                        <label for="pref_email">Email</label>
+                                        <input type="radio" id="pref_phone" name="preferred_contact" value="Phone">
+                                        <label for="pref_phone">Phone</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div>
+                                        <input type="checkbox" id="terms" name="terms" required>
+                                        <label for="terms">I agree to the terms and conditions</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div>
+                                        <label for="message">Message:</label><br>
+                                        <textarea id="message" name="message" rows="5" cols="50"
+                                            placeholder="Type your message here..."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="reset" class="btn">Reset</button>
+                    </div>
+                </fieldset>
+
+            </form>
+            <br>
+            <br>
+            <br>
+        </section>
+
+    </main>
+    <!--^ Main Section End  -->
+    <br>
+
+    <!-- ^ Footer Section Start -->
+    <section>
+        <footer>
+            <br>
+            <br>
+
+            <address>
+                Contact: Email: <a href="youssef.mo.mohmoud89@gmail.com">youssef.mo.mohmoud89@gmail.com</a>
+                &nbsp;|&nbsp;
+                Location: Cairo,Egypt
+            </address>
+            <p>
+                <a href="https://github.com/Joseph-Mohamed" target="_blank">My GitHub Profile</a>
+            </p>
+            <p>&copy; 2026 Youssef Mohamed. All rights reserved.</p>
+            <br>
+            <br>
+        </footer>
+
+    </section>
+    <!-- ^ Footer Section End -->
+
+    <div class="note">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deserunt, similique alias, tempore eos
+            excepturi, rerum perferendis saepe architecto voluptates voluptatum deleniti. Qui cumque possimus neque.
+            Magnam adipisci aut facilis repudiandae ratione minima, nobis eligendi at optio veritatis sapiente provident
+            neque id molestias voluptatum laboriosam, quam perferendis ea consequatur natus! Nesciunt cum soluta at quam
+            veniam accusamus eius velit reprehenderit eaque consectetur ipsa accusantium quaerat asperiores eum, earum
+            facere cumque repudiandae mollitia? Sit quas expedita tempore eius optio distinctio maiores aliquid porro
+            ducimus velit ut fugiat quos facere inventore, mollitia aut ratione ipsa iste dolorem non fugit eveniet
+            cupiditate facilis! Repellat deserunt aspernatur error sapiente provident fugiat harum, officiis saepe
+            accusamus culpa laborum quisquam illum assumenda alias quas totam dicta fugit obcaecati consectetur sint
+            ducimus quia in soluta dolores? Magni odio sapiente illum ullam, enim incidunt, iusto dolores nobis
+            provident recusandae ratione corrupti dolor tempora tempore eligendi nostrum inventore maiores cupiditate
+            voluptatum corporis. Exercitationem facilis itaque quas assumenda est! Dolorum aspernatur molestiae
+            voluptate. Temporibus reiciendis in ab a obcaecati sapiente laudantium. Aliquam nemo praesentium numquam
+            minus perspiciatis neque eum porro quibusdam et quis aut placeat iste at rerum enim doloribus mollitia a,
+            hic error id! Eligendi ipsam labore beatae unde eos nisi quo distinctio, atque aperiam numquam assumenda
+            cupiditate veniam laudantium et aliquid, ad optio quam corporis. Dolores nemo quam vitae quis, voluptates
+            mollitia esse obcaecati assumenda dolorum rerum at dolore itaque eaque ratione. Dolores explicabo ducimus
+            aliquid rem aliquam eaque ipsum quisquam commodi, magni voluptatem blanditiis eius labore laborum
+            perspiciatis esse totam laboriosam excepturi cumque in soluta mollitia doloribus veniam similique? Laborum
+            perferendis neque, dolorem consectetur ullam in recusandae laboriosam rerum asperiores culpa repudiandae
+            quod necessitatibus. Et porro nemo harum, fugit sunt doloribus, quod earum impedit assumenda voluptatem enim
+            suscipit ratione laudantium. Nulla tempore atque quaerat provident, repudiandae inventore!</p>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
