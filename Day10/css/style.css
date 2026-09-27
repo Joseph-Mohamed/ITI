@@ -1,0 +1,237 @@
+/* * Global styles */
+
+:root {
+    --main-color: #e65f78;
+    --first-color: #333;
+    --section-color: #f1f1f1;
+    --time-duration: 500ms;
+    --second-color: #6c757d;
+}
+
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+    scroll-padding-top: 50px;
+}
+
+
+/* * navbar  */
+nav .active {
+    color: var(--main-color) !important;
+    font-weight: 700 !important;
+}
+
+.nav-link {
+    color: var(--first-color);
+    transition: color var(--time-duration);
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+/* * header section */
+.home_p {
+    max-width: 450px;
+}
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home button {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+}
+
+.home button:hover {
+    background-color: #FFF !important;
+    color: var(--first-color) !important
+}
+
+.setting {
+    background-color: var(--first-color);
+    top: 30%;
+    width: 35px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.dot {
+    width: 40px;
+    height: 70px;
+    border: 2px solid white;
+    background-color: transparent !important;
+    bottom: 70px;
+    animation: dot 800ms infinite alternate;
+    position: relative
+}
+
+.dot::after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-color: #FFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px
+}
+
+.typing span {
+    font-family: monospace;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    bottom: -22px;
+
+}
+
+.typing span:nth-child(1) {
+    animation: Devoloper 6s infinite steps(9);
+}
+
+.typing span:nth-child(2) {
+    animation: Designer 6s infinite steps(8);
+    border-right: 5px solid #fff;
+}
+
+/* * about section */
+
+.about_name {
+    color: var(--main-color);
+}
+
+.about i {
+    border: 2px solid #ccc;
+    color: var(--first-color) !important;
+    transition: border var(--time-duration), color var(--time-duration);
+}
+
+.about i:hover {
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+}
+
+.border {
+    border: 4px solid #dee2e68a !important;
+}
+
+/* ^ client section */
+
+.client {
+    background-color: var(--section-color);
+}
+
+
+.content img {
+    width: 100px;
+    height: 100px;
+}
+
+.titlep {
+    max-width: 450px;
+}
+
+.content i {
+    color: var(--main-color);
+}
+
+.clintp {
+    max-width: 450px !important;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+}
+
+.carousel-indicators button {
+    width: 30px !important;
+    background-color: var(--main-color) !important;
+    height: 6px !important;
+}
+
+
+/* ^ portfolio section */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    transition: opacity var(--time-duration);
+}
+
+.inner-two:hover .overlay {
+    opacity: 1 !important;
+}
+
+.content-overlay {
+    transform: translateY(100%);
+    transition: transform var(--time-duration);
+}
+
+.inner-two:hover .content-overlay {
+    transform: translateY(0);
+}
+
+.inner-two:hover img {
+    transition: scale var(--time-duration);
+}
+
+.inner-two:hover img {
+    scale: 1.4;
+}
+
+.portfolio ul .active {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+}
+
+/* ^ blog section */
+
+.blog {
+    background-color: var(--section-color);
+    color: var(--second-color);
+}
+
+.content-blog span {
+    color: var(--main-color);
+}
+
+.content-blog a {
+    transition: color var(--time-duration);
+}
+
+a:hover {
+    color: var(--main-color) !important;
+}
+
+.card-item {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ^ contact section */
+.icon {
+    color: var(--main-color);
+}
+
+form .btn {
+    background-color: var(--main-color) !important;
+}
+
+form .btn:hover {
+    color: #fff !important;
+}
+
+form .form-control:focus {
+    box-shadow: 0 0 0 0;
+    border-color: var(--main-color);
+}
+
+/* ^ end the contact */
